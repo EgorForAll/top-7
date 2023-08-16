@@ -1,6 +1,7 @@
 :root {
   --color-orange: #b88b58;
   --color-orange-hover: #715c44;
+  --mobile-width: 576px;
 }
 
 body {
@@ -24,6 +25,9 @@ ul {
   padding: 0;
   margin-left: 200px;
   margin-right: 200px;
+  @media (max-width: 576px) {
+    margin: 0;
+  }
 }
 
 .header-logo {

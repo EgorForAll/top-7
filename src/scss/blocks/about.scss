@@ -1,0 +1,21 @@
+.about-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.about-image {
+  box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-desc {
+  min-height: 215px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-image-wrapper {
+  display: flex;
+  justify-content: end;
+}

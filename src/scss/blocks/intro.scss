@@ -1,0 +1,63 @@
+.intro {
+  z-index: 1;
+  position: relative;
+}
+
+.intro-title {
+  color: #fff;
+  font-size: 95px;
+  text-transform: uppercase;
+  padding: 0;
+  z-index: 2;
+  font-weight: 700;
+}
+
+.intro-wrapper {
+  z-index: 2;
+}
+
+.orange-text {
+  color: $color-orange;
+}
+
+.intro-subtitle {
+  margin-top: 30px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  z-index: 2;
+  color: #fff;
+  font-size: 32px;
+}
+
+.carousel-indicators [data-bs-target] {
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  border: 2px solid $color-orange;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.carousel-indicators .active {
+  background-color: $color-orange;
+}
+
+.intro-container {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  margin-top: -170px;
+}
+
+.intro-title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,46 @@
+.header {
+  position: relative;
+  background-color: #000;
+  z-index: 1;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  position: relative;
+  height: inherit;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 20px;
+  z-index: 1;
+  color: #fff;
+  transition: color 0.2s ease-in;
+  &:hover {
+    color: $color-orange;
+  }
+}
+
+.header-link--active {
+  &::before {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    content: "";
+    background-color: #b88b58;
+    z-index: 2;
+  }
+}
+
+.header-link:last-child {
+  margin-right: 0;
+}
+
+.header-nav {
+  justify-content: end;
+}

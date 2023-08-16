@@ -1,0 +1,59 @@
+.price {
+  background-color: #ededed;
+}
+
+.price-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 255px;
+  min-height: 350px;
+}
+
+.item-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.item-price {
+  font-weight: 700;
+  font-size: 40px;
+  width: 100%;
+  margin-left: -3px;
+  display: block;
+}
+
+.item-period {
+  color: #cecece;
+  display: block;
+  font-size: 13px;
+}
+
+.advantages-item {
+  color: #a9a9a9;
+  position: relative;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.advantages-item:before {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
+  background-color: #a9a9a9;
+  content: "";
+}
+
+.item-btn {
+  margin: 0 auto;
+  background-color: #373737;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 130px;
+  height: 45px;
+  font-size: 14px;
+}

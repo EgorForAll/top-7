@@ -1,0 +1,35 @@
+.form-control {
+  padding: 0;
+  border: none;
+  width: 190px;
+  color: #000;
+  font-size: 18px;
+
+  &:focus {
+    box-shadow: none;
+    border-color: #fff;
+    border: none;
+    color: #000;
+    font-size: 18px;
+  }
+}
+
+.form-label {
+  position: absolute;
+  bottom: 5px;
+  margin: 0;
+  left: 0;
+  font-size: 18px;
+  color: #aeaeae;
+}
+
+.form-field {
+  width: 260px;
+  padding-bottom: 5px;
+  position: relative;
+  border-bottom: 2px solid #aeaeae;
+}
+
+.control-long {
+  width: 100%;
+}
