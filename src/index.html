@@ -19,7 +19,26 @@
       tabindex="-1"
       aria-labelledby="modalCall"
       aria-hidden="true"
+      style="color: #afafaf"
     >
+      <div
+        class="modal fade"
+        id="successModal"
+        tabindex="-1"
+        aria-labelledby="successModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog success-modal">
+          <div class="modal-content">
+            <div class="modal-body d-flex flex-column align-items-center">
+              <h2 class="col-6 text-uppercase text-center fs-5">Done!</h2>
+              <span class="col-6 text-center"
+                >We will soon get back to you.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body">
@@ -37,7 +56,12 @@
                 >
                 <input id="modalPhone" type="number" class="modal-input" />
               </div>
-              <button type="submit" class="page-button btn-primary mt-5 mb-5">
+              <button
+                type="button"
+                class="page-button btn-primary mt-5 mb-5"
+                data-bs-toggle="modal"
+                data-bs-target="#successModal"
+              >
                 Call me back!
               </button>
             </form>
