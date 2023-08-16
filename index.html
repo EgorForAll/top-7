@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Top-7</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container p-0">
+        <div class="row">
+          <div class="header-logo col-2 p-0" style="min-height: 100px">
+            <img src="./assets/Logo.png" width="50" height="50" alt="Логотип" />
+          </div>
+          <nav
+            class="header-nav col-10 d-flex align-items-center p-0"
+            style="min-height: 100px"
+          >
+            <a href="/" class="header-link text-uppercase header-link--active"
+              >home</a
+            >
+            <a href="/" class="header-link text-uppercase">about us</a>
+            <a href="/" class="header-link text-uppercase">services</a>
+            <a href="/" class="header-link text-uppercase">our projects</a>
+            <a href="/" class="header-link text-uppercase">our team</a>
+            <a href="/" class="header-link text-uppercase">happy clients</a>
+            <a href="/" class="header-link text-uppercase">price</a>
+            <a href="/" class="header-link text-uppercase">some facts</a>
+            <a href="/" class="header-link text-uppercase">contact us</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro-container col-12 p-0 d-flex justify-content-center">
+          <h1 class="intro-title col-8">
+            Design is about
+            <span style="color: var(--color-orange)">communication</span>
+          </h1>
+          <span class="intro-subtitle text-center"
+            >call us: +00 0 1234 5678
+          </span>
+          <button class="intro-button btn btn-primary">Get in touch</button>
+        </div>
+        <div id="intro-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#intro-carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#intro-carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#intro-carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/Bg_img_01.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/Bg_img_01.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/Bg_img_01.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            style="visibility: hidden"
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#intro-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button
+            style="visibility: hidden"
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#intro-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+      </section>
+      <section class="about bg-body">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center text-uppercase">about us</h2>
+            <span class="section-subtitle text-center text-uppercase"
+              >who we are</span
+            >
+          </div>
+          <div class="row mt-5 mb-5">
+            <div class="about-desc col-7">
+              <p class="about-text">
+                Praesent metus urna, feugiat a placerat vel, elementum at leo.
+                Quisque vel fermentum ipsum. Nulla at facilisis est, vel
+                condimentum ligula. Mauris volutpat vitae risus sed
+                pellentesque. Praesent fermentum neque ac tellus gravida, at
+                varius sem accumsan. Nam porta erat id sapien consectetur. Fusce
+                sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci
+                leo facilisis purus. Nam porta erat id sapien consectetur. Fusce
+                sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci
+                leo facilisis purus.
+              </p>
+              <button class="intro-button btn btn-primary">Learn more</button>
+            </div>
+            <div class="about-image-wrapper col-5 p-0">
+              <img
+                class="about-image"
+                src="./assets/Video.jpg"
+                width="445"
+                height="275"
+                alt="Постер видео"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center text-uppercase">Price</h2>
+            <span class="section-subtitle text-center text-uppercase"
+              >pricing table</span
+            >
+          </div>
+          <div class="row mt-5">
+            <ul class="price-list d-flex p-0 justify-content-between mb-5">
+              <li class="price-item col-3">
+                <h3 class="item-title text-uppercase text-center mt-4">
+                  express
+                </h3>
+                <span class="item-price text-uppercase text-center"
+                  >&#36; 9.99</span
+                >
+                <span class="item-period text-uppercase text-center"
+                  >/month</span
+                >
+                <ul class="advantages-list p-0 mt-1">
+                  <li class="advantages-item text-center mb-4">
+                    Tracking Issues
+                  </li>
+                  <li class="advantages-item text-center mb-4">
+                    Add bugs through email
+                  </li>
+                  <li class="advantages-item text-center mb-4">
+                    Notifications
+                  </li>
+                  <li class="advantages-item text-center mb-4">
+                    Time tracking
+                  </li>
+                  <li class="advantages-item text-center mb-5">Custom views</li>
+                </ul>
+                <button type="button" class="item-btn btn btn-secondary mb-3">
+                  choose
+                </button>
+              </li>
+              <li class="price-item col-3">
+                <h3 class="item-title text-uppercase text-center mt-4">
+                  standart
+                </h3>
+                <span class="item-price text-uppercase text-center"
+                  >&#36; 14.99</span
+                >
+                <span class="item-period text-uppercase text-center"
+                  >/month</span
+                >
+                <ul class="advantages-list p-0 mt-1">
+                  <li class="advantages-item text-center mb-4">
+                    Tracking Issues
+                  </li>
+                  <li class="advantages-item text-center mb-4">
+                    Add bugs through email
+                  </li>
+                  <li class="advantages-item text-center mb-4">
+                    Notifications
+                  </li>
+                  <li class="advantages-item text-center mb-4">
+                    Time tracking
+                  </li>
+                  <li class="advantages-item text-center mb-5">Custom views</li>
+                </ul>
+                <button type="button" class="item-btn btn btn-secondary mb-3">
+                  choose
+                </button>
+              </li>
+              <li class="price-item col-3">
+                <h3 class="item-title text-uppercase text-center mt-4">luxe</h3>
+                <span class="item-price text-uppercase text-center"
+                  >&#36; 19.99</span
+                >
+                <span class="item-period text-uppercase text-center"
+                  >/month</span
+                >
+                <ul class="advantages-list p-0 mt-1">
+                  <li class="advantages-item text-center mb-4">
+                    Tracking Issues
+                  </li>
+                  <li class="advantages-item text-center mb-4">
+                    Add bugs through email
+                  </li>
+                  <li class="advantages-item text-center mb-4">
+                    Notifications
+                  </li>
+                  <li class="advantages-item text-center mb-4">
+                    Time tracking
+                  </li>
+                  <li class="advantages-item text-center mb-5">Custom views</li>
+                </ul>
+                <button type="button" class="item-btn btn btn-secondary mb-3">
+                  choose
+                </button>
+              </li>
+              <li class="price-item col-3">
+                <h3 class="item-title text-uppercase text-center mt-4">
+                  premium
+                </h3>
+                <span class="item-price text-uppercase text-center"
+                  >&#36; 24.99</span
+                >
+                <span class="item-period text-uppercase text-center"
+                  >/month</span
+                >
+                <ul class="advantages-list p-0 mt-1">
+                  <li class="advantages-item text-center mb-4">
+                    Tracking Issues
+                  </li>
+                  <li class="advantages-item text-center mb-4">
+                    Add bugs through email
+                  </li>
+                  <li class="advantages-item text-center mb-4">
+                    Notifications
+                  </li>
+                  <li class="advantages-item text-center mb-4">
+                    Time tracking
+                  </li>
+                  <li class="advantages-item text-center mb-5">Custom views</li>
+                </ul>
+                <button type="button" class="item-btn btn btn-secondary mb-3">
+                  choose
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container" style="width: 540px; margin: 0 auto">
+          <div class="row">
+            <h2 class="section-title text-center text-uppercase">CONTACT US</h2>
+            <span class="section-subtitle text-center text-uppercase"
+              >our agency located in Melbourne, Australia</span
+            >
+          </div>
+          <form class="row g-2 mt-5 mb-5 d-flex justify-content-between">
+            <div class="form-field m-0 col-6 d-flex justify-content-end">
+              <label for="inputName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="inputName" />
+            </div>
+            <div class="form-field m-0 col-6 d-flex justify-content-end">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" />
+            </div>
+            <div
+              class="form-field col-12 mt-4 d-flex justify-content-end"
+              style="width: 100%"
+            >
+              <label for="inputSubject" class="form-label">Subject</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputSubject"
+                style="width: 450px"
+              />
+            </div>
+            <div
+              class="form-field col-12 mt-5 d-flex justify-content-end"
+              style="width: 100%"
+            >
+              <label for="inputMessage" class="form-label">Message</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputMessage"
+                style="width: 450px"
+              />
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-5">
+              <button type="submit" class="intro-button btn btn-primary">
+                Send message
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="footer pt-4 pb-4">
+        <div class="anchor-wrapper">
+          <a href="#top" class="intro-button anchor-top"> </a>
+        </div>
+        <div class="container">
+          <div class="row col-12">
+            <div class="col-9 d-flex justify-content-between">
+              <div class="col-5 d-flex flex-column justify-content-between">
+                <nav class="footer d-flex">
+                  <a href="/" class="footer-link intro-button">
+                    <img
+                      src="./assets/social-media/twitter.svg"
+                      alt="Ссылка на twitter"
+                    />
+                  </a>
+                  <a href="/" class="footer-link intro-button">
+                    <img
+                      src="./assets/social-media/instagram.svg"
+                      alt="Ссылка на linkedIn"
+                    />
+                  </a>
+                  <a href="/" class="footer-link intro-button">
+                    <img
+                      src="./assets/social-media/linkedIn.svg"
+                      alt="Ссылка на instagram"
+                    />
+                  </a>
+                  <a href="/" class="footer-link intro-button">
+                    <img
+                      src="./assets/social-media/facebook.svg"
+                      alt="Ссылка на facebook"
+                    />
+                  </a>
+                  <a href="/" class="footer-link intro-button">
+                    <img
+                      src="./assets/social-media/youtube.svg"
+                      alt="Ссылка на youtube"
+                    />
+                  </a>
+                  <a href="/" class="footer-link intro-button">
+                    <img
+                      src="./assets/social-media/google.svg"
+                      alt="Ссылка на google"
+                    />
+                  </a>
+                  <a href="/" class="footer-link intro-button">
+                    <img
+                      src="./assets/social-media/other.svg"
+                      alt="Ссылка на other"
+                    />
+                  </a>
+                </nav>
+                <div class="copyright">awax &copy; 2016</div>
+              </div>
+              <div class="col-5">
+                <p class="footer-text">
+                  Nulla iaculis enim a magna tempor congue. Sed aliquam
+                  dignissim hendrerit. Duis erat nulla, pellentesque at enim in,
+                  scelerisque placerat nunc. Nulla vestibulum ex sed neque
+                  auctor rutrum. Donec fringilla tincidunt aliquet. Nullam
+                  rhoncus urna massa, vulputate congue velit pulvinar suscipit.
+                  Mauris laoreet blandit pharetra. Suspendisse rutrum dolor at
+                  augue convallis, eget dapibus nunc consequat. Sed diam nulla,
+                  elementum non laoreet eu,vulputate urna, at pellentesque risus
+                  orci in ante.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
