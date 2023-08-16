@@ -1,29 +1,36 @@
 .anchor-top {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  @include util-btn();
 
   &::before {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 47%;
     width: 20px;
     height: 2px;
     background-color: #fff;
     content: "";
     transform: rotate(45deg);
+    @media (max-width: $mobile-width) {
+      width: 15px;
+      top: 45%;
+      left: 43%;
+    }
   }
 
   &::after {
     position: absolute;
-    top: 50%;
-    left: 23%;
-    width: 20px;
+    top: 46%;
+    left: 21%;
+    width: 22px;
     height: 2px;
     background-color: #fff;
     content: "";
     transform: rotate(-45deg);
+    @media (max-width: $mobile-width) {
+      width: 15px;
+      top: 45%;
+      left: 18%;
+    }
   }
 }
 
@@ -36,6 +43,10 @@ footer {
   position: absolute;
   top: -30px;
   left: 80px;
+  @media (max-width: $mobile-width) {
+    top: -20px;
+    left: 40px;
+  }
 }
 
 .footer-link {
@@ -48,15 +59,39 @@ footer {
   &:hover {
     background-color: $color-orange;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 5px;
+  }
 }
 
 .footer-text {
   font-size: 16px;
   color: #7e7e7e;
+  margin: 0;
+  @media (max-width: $mobile-width) {
+    font-size: 13px;
+  }
 }
 
 .copyright {
   text-transform: uppercase;
   font-size: 18px;
   color: #fff;
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .container-md {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @media (max-width: $mobile-width) {
+    padding: 40px 20px;
+  }
 }

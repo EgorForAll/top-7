@@ -13,10 +13,42 @@
     <title>Top-7</title>
   </head>
   <body>
+    <div
+      class="modal fade"
+      id="modalCall"
+      tabindex="-1"
+      aria-labelledby="modalCall"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form
+              action="/"
+              class="modal-form col-12 d-flex align-items-center flex-column"
+            >
+              <div class="modal-field col-12 col-lg-8">
+                <label for="modalName" class="modal-label">Name</label>
+                <input id="modalName" type="text" class="modal-input" />
+              </div>
+              <div class="modal-field col-12 col-lg-8">
+                <label for="modalPhone" class="modal-label"
+                  >+00 0 1234 5678</label
+                >
+                <input id="modalPhone" type="number" class="modal-input" />
+              </div>
+              <button type="submit" class="page-button btn-primary mt-5 mb-5">
+                Call me back!
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="header">
-      <div class="container p-0">
-        <div class="row">
-          <div class="header-logo col-2 p-0" style="min-height: 100px">
+      <div class="container-md">
+        <div class="row col-12 d-flex justify-content-between">
+          <div class="header-logo col-4 col-lg-2 p-0">
             <img
               src="./files/img/Logo.png"
               width="50"
@@ -24,10 +56,7 @@
               alt="Логотип"
             />
           </div>
-          <nav
-            class="header-nav col-10 d-flex align-items-center p-0"
-            style="min-height: 100px"
-          >
+          <nav class="header-nav col-8 col-lg-10 p-0">
             <a href="/" class="header-link text-uppercase header-link--active"
               >home</a
             >
@@ -122,17 +151,31 @@
             <span class="visually-hidden">Следующий</span>
           </button>
         </div>
+        <div class="phone-btn-wrapper">
+          <button
+            type="button"
+            class="page-button btn btn-primary phone-btn p-0"
+            data-bs-toggle="modal"
+            data-bs-target="#modalCall"
+          >
+            <img
+              class="phone-image"
+              src="./files/img/phone.svg"
+              alt="Кнопка позвонить"
+            />
+          </button>
+        </div>
       </section>
       <section class="about bg-body">
-        <div class="container">
+        <div class="container-md">
           <div class="row">
             <h2 class="section-title text-center text-uppercase">about us</h2>
             <span class="section-subtitle text-center text-uppercase"
               >who we are</span
             >
           </div>
-          <div class="row mt-5 mb-5">
-            <div class="about-desc col-7">
+          <div class="row about-wrapper">
+            <div class="about-desc col-xs-12 col-lg-7">
               <p class="about-text">
                 Praesent metus urna, feugiat a placerat vel, elementum at leo.
                 Quisque vel fermentum ipsum. Nulla at facilisis est, vel
@@ -146,29 +189,37 @@
               </p>
               <button class="page-button btn btn-primary">Learn more</button>
             </div>
-            <div class="about-image-wrapper col-5 p-0">
-              <img
-                class="about-image"
-                src="./files/img/Video.jpg"
-                width="445"
-                height="275"
-                alt="Постер видео"
-              />
+            <div class="about-image-wrapper col-xs-12 col-lg-5 p-0">
+              <picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcset="./files/img/Video.jpg"
+                  width="280"
+                  height="173"
+                />
+                <img
+                  class="about-image"
+                  src="./files/img/Video.jpg"
+                  width="445"
+                  height="275"
+                  alt="Постер видео"
+                />
+              </picture>
             </div>
           </div>
         </div>
       </section>
       <section class="price">
-        <div class="container">
+        <div class="container-md">
           <div class="row">
             <h2 class="section-title text-center text-uppercase">Price</h2>
             <span class="section-subtitle text-center text-uppercase"
               >pricing table</span
             >
           </div>
-          <div class="row mt-5">
-            <ul class="price-list d-flex p-0 justify-content-between mb-5">
-              <li class="price-item col-3">
+          <div class="row mt-4">
+            <ul class="price-list mb-5">
+              <li class="price-item col-xs-12 col-lg-3">
                 <h3 class="item-title text-uppercase text-center mt-4">
                   express
                 </h3>
@@ -197,7 +248,7 @@
                   choose
                 </button>
               </li>
-              <li class="price-item col-3">
+              <li class="price-item col-xs-12 col-lg-3">
                 <h3 class="item-title text-uppercase text-center mt-4">
                   standart
                 </h3>
@@ -226,7 +277,7 @@
                   choose
                 </button>
               </li>
-              <li class="price-item col-3">
+              <li class="price-item col-xs-12 col-lg-3">
                 <h3 class="item-title text-uppercase text-center mt-4">luxe</h3>
                 <span class="item-price text-uppercase text-center"
                   >&#36; 19.99</span
@@ -253,7 +304,7 @@
                   choose
                 </button>
               </li>
-              <li class="price-item col-3">
+              <li class="price-item col-xs-12 col-lg-3">
                 <h3 class="item-title text-uppercase text-center mt-4">
                   premium
                 </h3>
@@ -287,63 +338,45 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="container" style="width: 540px; margin: 0 auto">
+        <div class="container-md">
           <div class="row">
             <h2 class="section-title text-center text-uppercase">CONTACT US</h2>
             <span class="section-subtitle text-center text-uppercase"
               >our agency located in Melbourne, Australia</span
             >
           </div>
-          <form class="row g-2 mt-5 mb-5 d-flex justify-content-between">
-            <div class="form-field m-0 col-6 d-flex justify-content-end">
+          <form class="row form">
+            <div class="form-field col-lg-5">
               <label for="inputName" class="form-label">Name</label>
               <input type="text" class="form-control" id="inputName" />
             </div>
-            <div class="form-field m-0 col-6 d-flex justify-content-end">
+            <div class="form-field col-lg-5">
               <label for="inputEmail" class="form-label">Email</label>
               <input type="email" class="form-control" id="inputEmail" />
             </div>
-            <div
-              class="form-field col-12 mt-4 d-flex justify-content-end"
-              style="width: 100%"
-            >
+            <div class="form-field">
               <label for="inputSubject" class="form-label">Subject</label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputSubject"
-                style="width: 450px"
-              />
+              <input type="text" class="form-control" id="inputSubject" />
             </div>
-            <div
-              class="form-field col-12 mt-5 d-flex justify-content-end"
-              style="width: 100%"
-            >
+            <div class="form-field">
               <label for="inputMessage" class="form-label">Message</label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputMessage"
-                style="width: 450px"
-              />
+              <input type="text" class="form-control" id="inputMessage" />
             </div>
-            <div class="col-12 d-flex justify-content-center mt-5">
-              <button type="submit" class="page-button btn btn-primary">
-                Send message
-              </button>
-            </div>
+            <button type="submit" class="page-button btn btn-primary">
+              Send message
+            </button>
           </form>
         </div>
       </section>
-      <footer class="footer pt-4 pb-4">
+      <footer class="footer p-0">
         <div class="anchor-wrapper">
           <a href="#top" class="page-button anchor-top"> </a>
         </div>
-        <div class="container">
-          <div class="row col-12">
-            <div class="col-9 d-flex justify-content-between">
-              <div class="col-5 d-flex flex-column justify-content-between">
-                <nav class="footer d-flex">
+        <div class="container-md">
+          <div class="row col-xs-12">
+            <div class="col-xs-12 col-lg-9 d-flex p-0">
+              <div class="col-6 d-flex flex-column justify-content-between">
+                <nav class="footer-nav">
                   <a href="/" class="footer-link page-button">
                     <img
                       src="./files/img/social-media/twitter.svg"
@@ -389,7 +422,7 @@
                 </nav>
                 <div class="copyright">awax &copy; 2016</div>
               </div>
-              <div class="col-5">
+              <div class="col-6">
                 <p class="footer-text">
                   Nulla iaculis enim a magna tempor congue. Sed aliquam
                   dignissim hendrerit. Duis erat nulla, pellentesque at enim in,

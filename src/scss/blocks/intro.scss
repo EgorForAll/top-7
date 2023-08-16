@@ -10,6 +10,9 @@
   padding: 0;
   z-index: 2;
   font-weight: 700;
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+  }
 }
 
 .intro-wrapper {
@@ -27,6 +30,12 @@
   z-index: 2;
   color: #fff;
   font-size: 32px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 }
 
 .carousel-indicators [data-bs-target] {
@@ -36,6 +45,11 @@
   border: 2px solid $color-orange;
   border-radius: 50%;
   background-color: transparent;
+
+  @media (max-width: $mobile-width) {
+    width: 5px;
+    height: 5px;
+  }
 }
 
 .carousel-indicators .active {
@@ -47,6 +61,11 @@
   z-index: 3;
   top: 50%;
   margin-top: -170px;
+
+  @media (max-width: $mobile-width) {
+    top: 10%;
+    margin-top: 0;
+  }
 }
 
 .intro-title {
@@ -60,4 +79,27 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.phone-btn-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+.phone-btn {
+  bottom: 0;
+  margin-bottom: -30px;
+  @include util-btn();
+}
+
+.phone-image {
+  width: 40px;
+  height: 30px;
+  transform: translate(5px, 3px);
+  @media (max-width: $mobile-width) {
+    width: 30px;
+    height: 30px;
+    transform: translate(0, 2px);
+  }
 }

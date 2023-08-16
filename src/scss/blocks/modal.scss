@@ -1,0 +1,45 @@
+.modal-dialog {
+  max-width: 350px;
+  min-height: 330px;
+
+  @media (max-width: $mobile-width) {
+    max-width: 200px;
+    min-height: 250px;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -150px;
+  }
+}
+
+.modal-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-input {
+  border: none;
+  border-bottom: 2px solid #afafaf;
+  transition: border-bottom 0.2s ease-in;
+  &:focus {
+    border-bottom: 2px solid #000;
+  }
+}
+
+.modal-label {
+  margin-top: 20px;
+  color: #afafaf;
+  font-size: 16px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}

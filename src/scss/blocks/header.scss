@@ -2,11 +2,15 @@
   position: relative;
   background-color: #000;
   z-index: 1;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header-link {
@@ -22,9 +26,17 @@
   &:hover {
     color: $color-orange;
   }
+
+  @media (max-width: $mobile-width) {
+    font-size: 13px;
+    margin-right: 10px;
+  }
 }
 
 .header-link--active {
+  @media (max-width: $mobile-width) {
+    color: $color-orange;
+  }
   &::before {
     position: absolute;
     bottom: -40px;
@@ -34,6 +46,9 @@
     content: "";
     background-color: #b88b58;
     z-index: 2;
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
   }
 }
 
@@ -42,5 +57,18 @@
 }
 
 .header-nav {
+  display: flex;
   justify-content: end;
+  align-items: center;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.header .container-md {
+  width: 100%;
+  @media (max-width: $mobile-width) {
+    margin: 20px 0;
+  }
 }

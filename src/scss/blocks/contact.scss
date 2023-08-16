@@ -1,9 +1,26 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  @media (max-width: $mobile-width) {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+.contacts .container-md {
+  margin: 0 300px;
+  @media (max-width: $mobile-width) {
+    margin: 0;
+  }
+}
+
 .form-control {
   padding: 0;
   border: none;
-  width: 190px;
   color: #000;
   font-size: 18px;
+  margin-left: 80px;
 
   &:focus {
     box-shadow: none;
@@ -12,24 +29,39 @@
     color: #000;
     font-size: 18px;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 250px;
+    margin-left: 0;
+  }
 }
 
 .form-label {
   position: absolute;
-  bottom: 5px;
+  bottom: 0;
   margin: 0;
   left: 0;
   font-size: 18px;
   color: #aeaeae;
+  @media (max-width: $mobile-width) {
+    position: relative;
+    bottom: 0;
+  }
 }
 
 .form-field {
-  width: 260px;
-  padding-bottom: 5px;
+  display: flex;
+  padding: 0;
   position: relative;
   border-bottom: 2px solid #aeaeae;
+  margin-bottom: 20px;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
 }
 
-.control-long {
-  width: 100%;
+.form .page-button {
+  margin: 20px auto;
 }
