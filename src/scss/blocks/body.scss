@@ -1,3 +1,8 @@
+html {
+  position: relative;
+  margin: 0;
+}
+
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -16,8 +21,8 @@ ul {
 .container-md {
   width: auto;
   padding: 0;
-  margin-left: 170px;
-  margin-right: 170px;
+  margin-left: 100px;
+  margin-right: 100px;
   @media (max-width: $mobile-width) {
     margin: 0;
   }
@@ -54,6 +59,7 @@ input:focus {
 .page-button {
   text-transform: uppercase;
   border: none;
+  border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;

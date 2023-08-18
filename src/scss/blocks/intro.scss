@@ -96,10 +96,10 @@
 .phone-image {
   width: 40px;
   height: 30px;
-  transform: translate(5px, 3px);
+  transform: translate(-1px, 1px);
   @media (max-width: $mobile-width) {
-    width: 30px;
-    height: 30px;
-    transform: translate(0, 2px);
+    width: 20px;
+    height: 20px;
+    transform: translate(0, 0);
   }
 }
